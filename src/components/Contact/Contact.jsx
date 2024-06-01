@@ -1,12 +1,12 @@
 import React from 'react';
-import './Contact.module.css';
+import styles from  './Contact.module.css';
 
 const Contact = ({ contact, onDelete }) => {
   return (
-    <li className="contactItem">
+    <div className={styles.contactItem}>
       <p>{contact.name}: {contact.number}</p>
-      <button onClick={() => onDelete(contact.id)}>Delete</button>
-    </li>
+      <button className={styles.deleteBtn} onClick={() => onDelete(contact.id)}>Delete</button>
+    </div>
   );
 };
 

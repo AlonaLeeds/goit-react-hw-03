@@ -1,4 +1,4 @@
-.contact {
+.contactItem {
    display: flex;
    justify-content: space-between;
    padding: 10px;
@@ -6,10 +6,17 @@
 }
 
 .deleteBtn {
-   background-color: red;
+   background-color: #5b17b9;
    color: white;
    border: none;
    cursor: pointer;
+   width: 100px;
+   height: 35px;
    padding: 5px 10px;
    margin-left: 10px;
+}
+
+.deleteBtn:hover,
+.deleteBtn:active{
+      background-color: #530ae5;
 }

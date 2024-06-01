@@ -3,7 +3,7 @@ import SearchBox from "../SearchBox/SearchBox";
 import ContactList from "../ContactList/ContactList";
 
 import { useState, useEffect} from "react";
-import "./App.module.css"
+import styles from "./App.module.css"
 
 
 const initialContacts = [
@@ -45,7 +45,7 @@ const App = () => {
   }, [contacts]);
 
   return (
-    <div className="app">
+    <div className={styles.app}>
       <h1>Phonebook</h1>
       <ContactForm onAdd={handleAddContact} />
       <SearchBox value={filter} onChange={handleFilterChange} />

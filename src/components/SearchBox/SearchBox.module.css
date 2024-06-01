@@ -1,9 +1,14 @@
 .searchBox {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin-left: 10px;
    margin-bottom: 20px;
 }
 
 .input {
    width: 200px;
    padding: 5px;
-   margin-left: 10px;
+   margin-top: 40px;
+   margin-left: 20px;
 }
